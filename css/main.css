@@ -1,0 +1,79 @@
+/*
+http://paletton.com/#uid=7391z0kq7MkffTsl2PEvVILF3ug
+*/
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url(../media/HelveticaNeue-Thin.otf) format("truetype");
+}
+
+
+body {
+	font-family: HelveticaNeue, Helvetica, sans-serif;
+	font-size: 20px;
+	line-height: 1.25em;
+}
+
+a:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+
+nav {
+	background: rgba(90, 90, 110, 0.95);
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	color: #ddd;
+}
+
+nav a {
+	line-height: 50px;
+	text-align: center;
+	font-size: .8em;
+}
+nav a:hover {
+	color: white;
+}
+nav a img {
+	height: 40px;
+	margin: 5px 0;
+}
+
+#wrapper {
+}
+
+
+
+#section0 { background: #28D7A6; }
+#section1 { background: #9F31D8; }
+#section2 { background: #FCFF2F; }
+#section3 { background: #28D7A6; }
+#section4 { background: #9F31D8; }
+#section5 { background: #FCFF2F; }
+.section {
+	padding-top: 70px;
+	
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+
+#section0 .atlas {
+	height: 200px;
+	width: 200px;
+	-moz-border-radius: 150px;
+	-webkit-border-radius: 150px;
+	border-radius: 150px;
+}
+#section0 .wind_logo {
+	height: 300px;
+}
+.mission {
+	text-align: center;
+}
