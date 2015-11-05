@@ -2,7 +2,7 @@
  * 1140 - The lite 1140px resoponsive framework
  * URI: http://kodestudios.com/code/1140.css
  * 
- * Version: 1.2 | 2015-01-25
+ * Version: 1.3 | 2015-10-05
  * 
  * License: Kode Studios Educational License Version 1.0 
  * License URI: http://kodestudios.com/licenses/educational_v1-0.html
@@ -16,9 +16,10 @@
 
 
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/* 
+	http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0 | 20110126
+	License: none (public domain)
 */
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;margin:0;padding:0}article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object
 	{display:block}
@@ -28,7 +29,8 @@ figure
 	{position:relative}
 figure img
 	{width:100%}
-/* End resets
+/* 
+	End resets
 */
 	
 	
@@ -60,29 +62,29 @@ figure img
 .container12 .omega, .container16 .omega { margin-right: 0; }
 .container12 .outer, .container16 .outer { margin-right: 0; margin-left: 0; }
 
-.container12 .column1  { width:  6.33333%; }	.container12 .column1.alpha,  .container12 .column1.omega  { width:  7.33333%; }
-.container12 .column2  { width: 14.66667%; }	.container12 .column2.alpha,  .container12 .column2.omega  { width: 15.66667%; }
-.container12 .column3  { width: 23.00000%; }	.container12 .column3.alpha,  .container12 .column3.omega  { width: 24.00000%; }
-.container12 .column4  { width: 31.33333%; }	.container12 .column4.alpha,  .container12 .column4.omega  { width: 32.33333%; }
-.container12 .column5  { width: 39.66667%; }	.container12 .column5.alpha,  .container12 .column5.omega  { width: 40.66667%; }
-.container12 .column6  { width: 48.00000%; }	.container12 .column6.alpha,  .container12 .column6.omega  { width: 49.00000%; }
-.container12 .column7  { width: 56.33333%; }	.container12 .column7.alpha,  .container12 .column7.omega  { width: 57.33333%; }
-.container12 .column8  { width: 64.66667%; }	.container12 .column8.alpha,  .container12 .column8.omega  { width: 65.66667%; }
-.container12 .column9  { width: 73.00000%; }	.container12 .column9.alpha,  .container12 .column9.omega  { width: 74.00000%; }
-.container12 .column10 { width: 81.33333%; }	.container12 .column10.alpha, .container12 .column10.omega { width: 82.33333%; }
-.container12 .column11 { width: 89.66667%; }	.container12 .column11.alpha, .container12 .column11.omega { width: 90.66667%; }
-.container12 .column12 { width: 98.00000%; }	.container12 .column12.alpha, .container12 .column12.omega { width: 99.00000%; }
-.container12 .prefix1  { padding-left:   8.33333%; }
-.container12 .prefix2  { padding-left:  16.66667%; }
-.container12 .prefix3  { padding-left:  25.00000%; }
-.container12 .prefix4  { padding-left:  33.33333%; }
-.container12 .prefix5  { padding-left:  41.66667%; }
-.container12 .prefix6  { padding-left:  50.00000%; }
-.container12 .prefix7  { padding-left:  58.33333%; }
-.container12 .prefix8  { padding-left:  66.66667%; }
-.container12 .prefix9  { padding-left:  75.00000%; }
-.container12 .prefix10 { padding-left:  83.33333%; }
-.container12 .prefix11 { padding-left:  91.66667%; }
+.container12 .column1,  .column1  { width:  6.33333%; }	.container12 .column1.alpha,  .column1.alpha,  .container12 .column1.omega,  .column1.omega  { width:  7.33333%; }
+.container12 .column2,  .column2  { width: 14.66667%; }	.container12 .column2.alpha,  .column2.alpha,  .container12 .column2.omega,  .column2.omega  { width: 15.66667%; }
+.container12 .column3,  .column3  { width: 23.00000%; }	.container12 .column3.alpha,  .column3.alpha,  .container12 .column3.omega,  .column3.omega  { width: 24.00000%; }
+.container12 .column4,  .column4  { width: 31.33333%; }	.container12 .column4.alpha,  .column4.alpha,  .container12 .column4.omega,  .column4.omega  { width: 32.33333%; }
+.container12 .column5,  .column5  { width: 39.66667%; }	.container12 .column5.alpha,  .column5.alpha,  .container12 .column5.omega,  .column5.omega  { width: 40.66667%; }
+.container12 .column6,  .column6  { width: 48.00000%; }	.container12 .column6.alpha,  .column6.alpha,  .container12 .column6.omega,  .column6.omega  { width: 49.00000%; }
+.container12 .column7,  .column7  { width: 56.33333%; }	.container12 .column7.alpha,  .column7.alpha,  .container12 .column7.omega,  .column7.omega  { width: 57.33333%; }
+.container12 .column8,  .column8  { width: 64.66667%; }	.container12 .column8.alpha,  .column8.alpha,  .container12 .column8.omega,  .column8.omega  { width: 65.66667%; }
+.container12 .column9,  .column9  { width: 73.00000%; }	.container12 .column9.alpha,  .column9.alpha,  .container12 .column9.omega,  .column9.omega  { width: 74.00000%; }
+.container12 .column10, .column10 { width: 81.33333%; }	.container12 .column10.alpha, .column10.alpha, .container12 .column10.omega, .column10.omega { width: 82.33333%; }
+.container12 .column11, .column11 { width: 89.66667%; }	.container12 .column11.alpha, .column11.alpha, .container12 .column11.omega, .column11.omega { width: 90.66667%; }
+.container12 .column12, .column12 { width: 98.00000%; }	.container12 .column12.alpha, .column12.alpha, .container12 .column12.omega, .column12.omega { width: 99.00000%; }
+.container12 .prefix1,  .prefix1  { padding-left:   8.33333%; }
+.container12 .prefix2,  .prefix2  { padding-left:  16.66667%; }
+.container12 .prefix3,  .prefix3  { padding-left:  25.00000%; }
+.container12 .prefix4,  .prefix4  { padding-left:  33.33333%; }
+.container12 .prefix5,  .prefix5  { padding-left:  41.66667%; }
+.container12 .prefix6,  .prefix6  { padding-left:  50.00000%; }
+.container12 .prefix7,  .prefix7  { padding-left:  58.33333%; }
+.container12 .prefix8,  .prefix8  { padding-left:  66.66667%; }
+.container12 .prefix9,  .prefix9  { padding-left:  75.00000%; }
+.container12 .prefix10, .prefix10 { padding-left:  83.33333%; }
+.container12 .prefix11, .prefix11 { padding-left:  91.66667%; }
 
 .container16 .column1  { width:  4.25%; }	.container16 .column1.alpha,   .container16 .column1.omega   { width:   5.25%; }
 .container16 .column2  { width: 10.49%; }	.container16 .column2.alpha,   .container16 .column2.omega   { width:  11.49%; }
@@ -126,22 +128,22 @@ figure img
 
 @media only screen and (max-width: 767px) and (min-width: 480px) {
     .container12, .container16 { width: 420px; }
-    .container12 .column1,  .container16 .column1,
-    .container12 .column2,  .container16 .column2,
-    .container12 .column3,  .container16 .column3,
-    .container12 .column4,  .container16 .column4,
-    .container12 .column5,  .container16 .column5,
-    .container12 .column6,  .container16 .column6,
-    .container12 .column7,  .container16 .column7,
-    .container12 .column8,  .container16 .column8,
-    .container12 .column9,  .container16 .column9,
-    .container12 .column10, .container16 .column10,
-    .container12 .column11, .container16 .column11,
-    .container12 .column12, .container16 .column12,
-						    .container16 .column13,
-						    .container16 .column14,
-						    .container16 .column15,
-						    .container16 .column16 {
+    .column1,  .container12 .column1,  .container16 .column1,
+    .column2,  .container12 .column2,  .container16 .column2,
+    .column3,  .container12 .column3,  .container16 .column3,
+    .column4,  .container12 .column4,  .container16 .column4,
+    .column5,  .container12 .column5,  .container16 .column5,
+    .column6,  .container12 .column6,  .container16 .column6,
+    .column7,  .container12 .column7,  .container16 .column7,
+    .column8,  .container12 .column8,  .container16 .column8,
+    .column9,  .container12 .column9,  .container16 .column9,
+    .column10, .container12 .column10, .container16 .column10,
+    .column11, .container12 .column11, .container16 .column11,
+    .column12, .container12 .column12, .container16 .column12,
+									   .container16 .column13,
+									   .container16 .column14,
+									   .container16 .column15,
+									   .container16 .column16 {
         margin: 0 0 20px 0;
         width: 420px;
     }
@@ -161,22 +163,22 @@ figure img
 }
 @media only screen and (max-width: 479px) {
 	.container12, .container16 { width: 320px; }
-    .container12 .column1,  .container16 .column1,
-    .container12 .column2,  .container16 .column2,
-    .container12 .column3,  .container16 .column3,
-    .container12 .column4,  .container16 .column4,
-    .container12 .column5,  .container16 .column5,
-    .container12 .column6,  .container16 .column6,
-    .container12 .column7,  .container16 .column7,
-    .container12 .column8,  .container16 .column8,
-    .container12 .column9,  .container16 .column9,
-    .container12 .column10, .container16 .column10,
-    .container12 .column11, .container16 .column11,
-    .container12 .column12, .container16 .column12,
-						    .container16 .column13,
-						    .container16 .column14,
-						    .container16 .column15,
-						    .container16 .column16 {
+    .column1,  .container12 .column1,  .container16 .column1,
+    .column2,  .container12 .column2,  .container16 .column2,
+    .column3,  .container12 .column3,  .container16 .column3,
+    .column4,  .container12 .column4,  .container16 .column4,
+    .column5,  .container12 .column5,  .container16 .column5,
+    .column6,  .container12 .column6,  .container16 .column6,
+    .column7,  .container12 .column7,  .container16 .column7,
+    .column8,  .container12 .column8,  .container16 .column8,
+    .column9,  .container12 .column9,  .container16 .column9,
+    .column10, .container12 .column10, .container16 .column10,
+    .column11, .container12 .column11, .container16 .column11,
+    .column12, .container12 .column12, .container16 .column12,
+									   .container16 .column13,
+									   .container16 .column14,
+									   .container16 .column15,
+									   .container16 .column16 {
         width: 320px;
     }
 }

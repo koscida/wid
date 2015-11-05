@@ -2,78 +2,142 @@
 http://paletton.com/#uid=7391z0kq7MkffTsl2PEvVILF3ug
 */
 
+/* **************** */
+/*		Fonts		*/
+/* **************** */
 @font-face {
   font-family: "HelveticaNeue";
   src: url(../media/HelveticaNeue-Thin.otf) format("truetype");
 }
 
 
+/* **************************** */
+/*		Bootstrap Overrides		*/
+/* **************************** */
+
+
+
+
+/* ******************************** */
+/*		Agency CSS Overrides		*/
+/* ******************************** */
+a {
+	color: black;
+	text-decoration: none;
+	border-bottom: 1px solid #000;
+}
+a:hover, a:focus, a:active, a:active{
+	text-decoration: none;
+	cursor: pointer;
+	color: #F5BE00;
+	border-bottom: 1px solid #F5BE00;
+}
+
+ul {
+	margin-left: 20px;	
+}
+li {
+	margin-bottom: 10px;
+}
+
+nav a, nav a:hover, nav a:focus, nav a:active, nav a:active {
+	text-decoration: none !important;
+	border-bottom: 0;
+}
+.navbar-default {
+	padding: 20px 0;
+	background-color: rgba(40, 40, 40, 0.4);
+}
+
+a.btn {
+	color: white;
+}
+
+
+
+/* **************** */
+/*		Layout		*/
+/* **************** */
 body {
 	font-family: HelveticaNeue, Helvetica, sans-serif;
 	font-size: 20px;
-	line-height: 1.25em;
+	line-height: 1.5em;
 }
-
-a:hover {
-	cursor: pointer;
-	text-decoration: underline;
-}
-
-
-nav {
-	background: rgba(90, 90, 110, 0.95);
-	height: 50px;
-	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 2;
-	color: #ddd;
-}
-
-nav a {
-	line-height: 50px;
-	text-align: center;
-	font-size: .8em;
-}
-nav a:hover {
-	color: white;
-}
-nav a img {
-	height: 40px;
-	margin: 5px 0;
-}
-
-#wrapper {
-}
-
-
-
-#section0 { background: #28D7A6; }
-#section1 { background: #9F31D8; }
-#section2 { background: #FCFF2F; }
-#section3 { background: #28D7A6; }
-#section4 { background: #9F31D8; }
-#section5 { background: #FCFF2F; }
-.section {
-	padding-top: 70px;
-	
+* { 
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 }
 
+.bg-teal {
+	background: #27D7A6;
+	background: #7BEACB;
+	background: #4DE0B7;
+}
+.bg-purple {
+	/*background: #9D31D8;
+	background: #C581EB;
+	background: #AF55E1;*/
+	background-image: url(../images/contemporary_china_2_purple.png);
+	background-position: center center;
+}
+.bg-yellow {
+	background: #FFFF2F;
+	background: #FFFF86;
+	background: #FFFF57;
+}
+.bg-image {
+	background-attachment: scroll;
+    background-position: center center;
+    background-repeat: none;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	}
+	.atlas1 {
+		background-image: url(../images/atlas1.jpg);
+	}
+	.lobby {
+		background-image: url(../images/lobbyblur2.jpg);
+	}
 
-#section0 .atlas {
-	height: 200px;
-	width: 200px;
-	-moz-border-radius: 150px;
-	-webkit-border-radius: 150px;
-	border-radius: 150px;
+
+
+
+/* ************************ */
+/*		Section Styles		*/
+/* ************************ */
+.intro-statement {
+	padding: 120px 10% 100px;
 }
-#section0 .wind_logo {
-	height: 300px;
+.intro-image {
+	width: 33%;
+	
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200x;
+	border-radius: 200px;
 }
-.mission {
+.intro-logo {
+	width: 63%;
+	margin-left: 3%;
+}
+.intro-mission {
+	margin: 20px 0;
 	text-align: center;
+	font-size: 30px;
+    line-height: 1.5em;
+    font-style: italic;
 }
+
+
+.text-bg {
+	padding: 20px;
+	background: rgba(255, 255, 255, 0.9);
+	
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3x;
+	border-radius: 3px;
+}
+
