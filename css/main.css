@@ -14,8 +14,15 @@ http://paletton.com/#uid=7391z0kq7MkffTsl2PEvVILF3ug
 /* **************************** */
 /*		Bootstrap Overrides		*/
 /* **************************** */
-
-
+p {
+	margin-bottom: 10px;
+}
+h4 {
+	font-size: 1.3em;
+}
+p {
+	font-size: inherit;
+}
 
 
 /* ******************************** */
@@ -47,6 +54,7 @@ nav a, nav a:hover, nav a:focus, nav a:active, nav a:active {
 .navbar-default {
 	padding: 20px 0;
 	background-color: rgba(40, 40, 40, 0.4);
+	font-size: .8em;
 }
 
 a.btn {
@@ -117,15 +125,10 @@ body {
 	padding: 120px 10% 100px;
 }
 .intro-image {
-	width: 33%;
-	
-	-moz-border-radius: 200px;
-	-webkit-border-radius: 200x;
-	border-radius: 200px;
+	border: 7px solid #fff;
 }
 .intro-logo {
-	width: 63%;
-	margin-left: 3%;
+	margin-top: 73px;
 }
 .intro-mission {
 	margin: 20px 0;
@@ -145,3 +148,37 @@ body {
 	border-radius: 3px;
 }
 
+
+
+.team-member .img-circle {
+	height: 225px;
+	width: 225px;
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+	/* container width 750px */
+	
+	.intro-logo {
+		margin-top: 47px;
+	}
+
+}
+
+@media (max-width: 767px) {
+	/* container width 100% */
+	.intro-image {
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	.intro-logo {
+		margin-top: 0px;
+	}
+
+}
