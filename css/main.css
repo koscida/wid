@@ -70,9 +70,11 @@ body {
 }
 
 .bg-teal {
-	background: #27D7A6;
+	/*background: #27D7A6;
 	background: #7BEACB;
-	background: #4DE0B7;
+	background: #4DE0B7;*/
+	background-image: url(../images/knitting250px_teal.png);
+	background-position: center center;
 }
 .bg-purple {
 	/*background: #9D31D8;
@@ -82,9 +84,11 @@ body {
 	background-position: center center;
 }
 .bg-yellow {
-	background: #FFFF2F;
+	/*background: #FFFF2F;
 	background: #FFFF86;
-	background: #FFFF57;
+	background: #FFFF57;*/
+	background-image: url(../images/wild_flowers_yellow.png);
+	background-position: center center;
 }
 .bg-image {
 	background-attachment: scroll;
