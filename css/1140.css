@@ -285,6 +285,15 @@ figure img
     }
 }
 
+.container .center,
+.container12 .center,
+.container16 .center { 
+	margin-left: auto; 
+	margin-right: auto;
+	display: block;
+	float: none;
+}
+
 .clearfix:before, .clearfix:after,
 .row:before, .row:after,
 .container12:before, .container12:after, .container16:before, .container16:after {

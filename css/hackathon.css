@@ -10,8 +10,9 @@ h2 { font-size: 2em; line-height: 1.5em; }
 h3 {
 	font-weight: bold;
 	color: #F3BC00;
-	margin: 10px 0 5px;
-}
+	margin: 15px 0 5px;
+	}
+	h3:first-child { margin: 0 0 5px; }
 
 
 
@@ -20,10 +21,13 @@ h3 {
 /*		Layout		*/
 /* **************** */
 .bg-hack {
-	background-image: url(../images/backgrounds/LadiesLearningCode3.jpg);
+	background-image: url(../images/backgrounds/LadiesLearningCode3-2.jpg);
 }
 .bg-sign-up {
     background-image: url(../images/backgrounds/LadiesLearningCode2.jpg);
+}
+.bg-orange {
+    background-image: url(../images/backgrounds/pw_pattern_FF7A2F.png);
 }
 	
 section {
@@ -38,7 +42,15 @@ section {
 /* ************************ */
 .hack-header {
 	padding: 120px 0 100px;
-    text-shadow: 2px 2px #333;
+}
+.hack-header h1, .hack-header h2,
+#join h1, #join h2 {
+	text-shadow: 2px 2px #333;
+}
+.btn {
+	-moz-box-shadow:    1px 1px 5px 0px rgba(50, 50, 50, 0.5);
+	-webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.5);
+	box-shadow:         1px 1px 5px 0px rgba(50, 50, 50, 0.5);
 }
 
 
@@ -56,20 +68,30 @@ section {
 
 
 
-.code-conduct {
-	text-align: center;
-}
-.code-conduct img { width: 150px; }
-.code-conduct h2 {
-	margin: 20px 0;
-}
 
 #join {
 	color: white;
 }
-#join h2 {
-	margin-bottom: 20px;
+#join h1 {
+	margin-bottom: 10px;
 }
+#join h2 {
+	margin-bottom: 100px;
+}
+
+
+
+#conduct .fa { 
+	font-size: 150px;
+	color: white;
+}
+.code-conduct, .why-conduct {
+	text-align: center;
+}
+.code-conduct h2, .why-conduct h2 {
+	margin: 20px 0;
+}
+
 
 
 
