@@ -87,6 +87,9 @@ body {
 	font-size: 20px;
 	line-height: 1.5em;
 }
+body.hackathon {
+	font-family: "Dosis", "Delius", Helvetica, sans-serif;
+}
 * { 
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -123,6 +126,9 @@ body {
 	}
 	.lobby {
 		background-image: url(../images/backgrounds/lobbyblur2.jpg);
+	}
+	.bg-hack {
+		background-image: url(../images/backgrounds/LadiesLearningCode2.jpg);
 	}
 
 
@@ -176,6 +182,25 @@ event h3 {
 	font-size: .8em;
 }
 
+
+
+
+
+
+
+
+.hack-header h2, .hack-header h3 {
+	text-transform: none;
+	text-shadow: 2px 2px #444;
+}
+
+.code-conduct {
+	text-align: center;
+}
+.code-conduct img { width: 150px; }
+.code-conduct h2 {
+	margin: 20px 0;
+}
 
 
 
