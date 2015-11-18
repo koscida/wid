@@ -11,23 +11,32 @@ http://paletton.com/#uid=7391z0kq7MkffTsl2PEvVILF3ug
 }
 
 
-/* **************************** */
-/*		Bootstrap Overrides		*/
-/* **************************** */
-p {
-	margin-bottom: 10px;
+
+
+
+/* *************** */
+/*		Styles     */
+/* *************** */
+body {
+    font-family: HelveticaNeue, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+body.hackathon {
+    font-family: "Dosis", "Delius", Helvetica, sans-serif;
+}
+* { 
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 h4 {
-	font-size: 1.3em;
+    font-size: 1.3em;
 }
 p {
-	font-size: inherit;
+	margin-bottom: 10px;
+    font-size: inherit;
 }
-
-
-/* ******************************** */
-/*		Agency CSS Overrides		*/
-/* ******************************** */
 a {
 	color: black;
 	text-decoration: none;
@@ -47,55 +56,17 @@ li {
 	margin-bottom: 10px;
 }
 
-nav a, nav a:hover, nav a:focus, nav a:active, nav a:active {
-	text-decoration: none !important;
-	border-bottom: 0;
-}
-.navbar-default {
-	padding: 20px 0;
-	background-color: rgba(40, 40, 40, 0.4);
-	font-size: .8em;
-}
-
 a.btn {
 	color: white;
 }
 
-section {
-	padding: 0 0 100px;
-}
-.section-heading {
-	padding: 30px;
-	background-color: rgba(40, 40, 40, 0.4);
-	color: white;
-	margin-bottom: 60px;
-}
-@media (max-width: 767px) {
-	.section-heading {
-		padding: 20px;
-		margin-bottom: 20px;
-	}
-}
+
 
 
 
 /* **************** */
 /*		Layout		*/
 /* **************** */
-body {
-	font-family: HelveticaNeue, Helvetica, sans-serif;
-	font-size: 20px;
-	line-height: 1.5em;
-}
-body.hackathon {
-	font-family: "Dosis", "Delius", Helvetica, sans-serif;
-}
-* { 
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-}
-
 .bg-teal {
 	background-color: #4DE0B7;
 	background-image: url(../images/backgrounds/knitting250px_teal.png);
@@ -127,9 +98,39 @@ body.hackathon {
 	.lobby {
 		background-image: url(../images/backgrounds/lobbyblur2.jpg);
 	}
-	.bg-hack {
-		background-image: url(../images/backgrounds/LadiesLearningCode2.jpg);
-	}
+	
+section {
+    padding: 0 0 100px;
+}
+.section-heading {
+    padding: 30px;
+    background-color: rgba(40, 40, 40, 0.4);
+    color: white;
+    margin-bottom: 60px;
+}
+@media (max-width: 767px) {
+    .section-heading {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* ***************** */
+/*      Nav Bar      */
+/* ***************** */
+nav a, nav a:hover, nav a:focus, nav a:active, nav a:active {
+    text-decoration: none !important;
+    border-bottom: 0;
+}
+.navbar-default {
+    padding: 20px 0;
+    background-color: rgba(40, 40, 40, 0.4);
+    font-size: .8em;
+}
+
+
 
 
 
@@ -171,10 +172,10 @@ body.hackathon {
 }
 
 
-event {
+.event {
 	
 }
-event h3 {
+.event h3 {
 	margin-bottom: 10px;
 }
 .btn-xl.btn-med {
@@ -185,22 +186,6 @@ event h3 {
 
 
 
-
-
-
-
-.hack-header h2, .hack-header h3 {
-	text-transform: none;
-	text-shadow: 2px 2px #444;
-}
-
-.code-conduct {
-	text-align: center;
-}
-.code-conduct img { width: 150px; }
-.code-conduct h2 {
-	margin: 20px 0;
-}
 
 
 

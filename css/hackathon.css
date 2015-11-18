@@ -1,0 +1,83 @@
+/* *************** */
+/*      Styles     */
+/* *************** */
+body {
+    font-family: "Dosis", "Delius", Helvetica, sans-serif;
+}
+
+h1 { font-size: 2.5em; line-height: 1.5em; }
+h2 { font-size: 2em; line-height: 1.5em; }
+h3 {
+	font-weight: bold;
+	color: #F3BC00;
+	margin: 10px 0 5px;
+}
+
+
+
+
+/* **************** */
+/*		Layout		*/
+/* **************** */
+.bg-hack {
+	background-image: url(../images/backgrounds/LadiesLearningCode3.jpg);
+}
+.bg-sign-up {
+    background-image: url(../images/backgrounds/LadiesLearningCode2.jpg);
+}
+	
+section {
+    padding: 80px 0 100px;
+}
+
+
+
+
+/* ************************ */
+/*		Section Styles		*/
+/* ************************ */
+.hack-header {
+	padding: 120px 0 100px;
+    text-shadow: 2px 2px #333;
+}
+
+
+.hack-def {
+	line-height: 1.1em;
+}
+.hack-def i, .hack-def span {
+	font-size: .8em;
+}
+.hack-def span {
+	display: block;
+	margin-left: 20px;
+}
+
+
+
+
+.code-conduct {
+	text-align: center;
+}
+.code-conduct img { width: 150px; }
+.code-conduct h2 {
+	margin: 20px 0;
+}
+
+#join {
+	color: white;
+}
+#join h2 {
+	margin-bottom: 20px;
+}
+
+
+
+
+@media (min-width: 768px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
