@@ -22,9 +22,6 @@ body {
     font-size: 20px;
     line-height: 1.5em;
 }
-body.hackathon {
-    font-family: "Dosis", "Delius", Helvetica, sans-serif;
-}
 * { 
     box-sizing: border-box;
     -moz-box-sizing: border-box;
