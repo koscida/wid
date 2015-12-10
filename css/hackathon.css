@@ -1,20 +1,86 @@
+/*
+Blue: 			#5AB8E2 	This is a test
+Cream:			#FEFEEE 	This is a test
+Light purple: 	#AA88AA 	This is a test
+Medium purple:	#553377 	This is a test
+Dark purple: 	#331155		This is a test
+*/
 /* *************** */
 /*      Styles     */
 /* *************** */
-body {
+body, html {
     font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+* { 
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 h1, h2, h3, h4 {
-	font-family: "Raleway", Helvetica, sans-serif;
+	font-family: "Gruppo", Helvetica, sans-serif;
 }
 h1 { font-size: 2.5em; line-height: 1.5em; }
 h2 { font-size: 2em; line-height: 1.5em; }
 h3 {
+	font-size: 1.5em;
+	line-height: 1.5em;
 	font-weight: bold;
-	color: #F3BC00;
+	color: #5ab8e2;
 	margin: 15px 0 5px;
 	}
 	h3:first-child { margin: 0 0 5px; }
+h4 {
+    font-size: 1.3em;
+}
+
+p {
+	margin-bottom: 10px;
+    font-size: inherit;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+	border-bottom: 1px solid #000;
+}
+a:hover, a:focus, a:active, a:active{
+	text-decoration: none;
+	cursor: pointer;
+	color: #5ab8e2;
+	border-bottom: 1px solid #5ab8e2;
+}
+a.btn {
+	color: white;
+}
+
+ul {
+	margin-left: 20px;	
+}
+li {
+	margin-bottom: 10px;
+}
+
+.btn {
+	-moz-box-shadow:    1px 1px 5px 0px rgba(50, 50, 50, 0.5);
+	-webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.5);
+	box-shadow:         1px 1px 5px 0px rgba(50, 50, 50, 0.5);
+}
+.btn-l, .btn-xl, .navbar-default .navbar-nav > .active > a {
+	background: #5ab8e2;
+	border: 0;
+	
+	transition: all .3s;
+}
+.btn-l:hover, .btn-l:focus, .btn-l:active,
+.btn-xl:hover, .btn-xl:focus, .btn-xl:active, 
+.navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:active {
+	background: #3a98c2;
+	border: 0;
+	color: white;
+}
+
 
 
 
@@ -22,19 +88,98 @@ h3 {
 /* **************** */
 /*		Layout		*/
 /* **************** */
-.bg-hack {
-	background-image: url(../images/backgrounds/LadiesLearningCode3-2.jpg);
+/* Head/Intro */
+.bg-head {
+	background: #AA88AA;
 }
+/* Questions */
+.bg-cream {
+	background: #FEFEEE;
+}
+/* Join */
 .bg-sign-up {
     background-image: url(../images/backgrounds/LadiesLearningCode2.jpg);
 }
-.bg-orange {
-    background-image: url(../images/backgrounds/pw_pattern_FF7A2F.png);
+/* Schedule */
+.bg-purple {
+	background-color: #AA88AA;
+	background-image: url(../images/backgrounds/new_year_background_AA88AA.png);
+	background-position: center center;
 }
+/* Sponsors */
+
+/* FAQ */
+.bg-grey {
+	background: #BBB;
+}
+
+
+.bg-image {
+	background-attachment: scroll;
+    background-position: center center;
+    background-repeat: none;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	}
+
+
+
+
+.bg-hack {
+	background-image: url(../images/backgrounds/LadiesLearningCode3-2.jpg);
+}
+
 	
 section {
-    padding: 80px 0 100px;
+    padding: 80px 0;
 }
+.section-heading {
+    padding: 30px;
+    background-color: rgba(40, 40, 40, 0.4);
+    color: white;
+    margin-bottom: 60px;
+}
+@media (max-width: 767px) {
+    .section-heading {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+/* ***************** */
+/*      Nav Bar      */
+/* ***************** */
+nav a {
+	text-decoration: none !important;
+    border-bottom: 0;
+	transition: all .3s;
+}
+nav a:hover, nav a:focus, nav a:active, nav a:active {
+    border-bottom: 0;
+}
+.navbar-default {
+    padding: 20px 0;
+    background-color: rgba(51, 17, 85, 0.4);
+    font-size: .8em;
+}
+.navbar-default.navbar-shrink {
+	background-color: #331155;
+}
+.navbar-default .navbar-brand {
+	color: #5ab8e2;
+	transition: all .3s;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active, 
+.navbar-default .nav li a:hover, .navbar-default .nav li a:focus {
+	color: #3a98c2;
+}
+
 
 
 
@@ -42,20 +187,39 @@ section {
 /* ************************ */
 /*		Section Styles		*/
 /* ************************ */
+/* header styles */
+header {
+	position: relative;
+}
+#header-canvas {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+}
+#header-container {
+	position: relative;
+	z-index: 2;
+}
 .hack-header {
-	padding: 120px 0 100px;
+	padding: 140px 0 60px;
+}
+.logo {
+	width: 250px;
 }
 .hack-header h1, .hack-header h2,
 #join h1, #join h2 {
 	text-shadow: 2px 2px #333;
 }
-.btn {
-	-moz-box-shadow:    1px 1px 5px 0px rgba(50, 50, 50, 0.5);
-	-webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.5);
-	box-shadow:         1px 1px 5px 0px rgba(50, 50, 50, 0.5);
+.hack-header .down {
+	font-size: 2.5em;
+	margin-top: 30px;
 }
 
 
+
+
+/* questions */
 .hack-def {
 	line-height: 1.1em;
 }
@@ -69,10 +233,12 @@ section {
 
 
 
-
-
+/* register */
 #join {
 	color: white;
+}
+#join h1, #join h2 {
+	font-weight: bold;
 }
 #join h1 {
 	margin-bottom: 10px;
@@ -82,9 +248,9 @@ section {
 }
 
 
-
+/* faq */
 #conduct .fa { 
-	font-size: 150px;
+	font-size: 100px;
 	color: white;
 }
 .code-conduct, .why-conduct {
@@ -96,6 +262,26 @@ section {
 
 
 
+
+/* **************** */
+/*		Footer		*/
+/* **************** */
+footer {
+	background-color: #331155;
+}
+footer, footer a {
+	color: white;
+	border-color: white;
+}
+footer ul.social-buttons li a {
+	background-color: white;
+}
+ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active {
+	background-color: #5ab8e2;
+}
+footer .fa {
+	color: black;
+}
 
 
 @media (min-width: 768px) {
