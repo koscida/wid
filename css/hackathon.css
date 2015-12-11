@@ -1,9 +1,9 @@
 /*
-Blue: 			#5AB8E2 	This is a test
-Cream:			#FEFEEE 	This is a test
-Light purple: 	#AA88AA 	This is a test
-Medium purple:	#553377 	This is a test
-Dark purple: 	#331155		This is a test
+Blue: 			#5AB8E2 	80, 184, 226
+Cream:			#FEFEEE 	254, 254, 238
+Light purple: 	#AA88AA 	170, 136, 170
+Medium purple:	#553377 	85, 51, 119
+Dark purple: 	#331155		51, 17, 85
 */
 /* *************** */
 /*      Styles     */
@@ -202,10 +202,10 @@ header {
 	z-index: 2;
 }
 .hack-header {
-	padding: 140px 0 60px;
+	padding: 120px 0 60px;
 }
 .logo {
-	width: 250px;
+	width: 300px;
 }
 .hack-header h1, .hack-header h2,
 #join h1, #join h2 {
