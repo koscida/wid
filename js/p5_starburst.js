@@ -7,8 +7,12 @@ $("#header-canvas")
 	.width(canvasWidth);
 
 
-var stars = new Array(130); 
-var starsCount = 100;
+var starsStart = 100;
+var starsCount = starsStart;
+var starsMax = 150;
+var starsMore = 0;
+var stars = new Array(starsMax); 
+
 
 var backRed = 170;
 var backGreen = 136;
@@ -65,20 +69,33 @@ function mousePressed() {
 		background(backRed, backGreen, backBlue);
 		starsCount = 100;		
 	} else {
-		if(starsCount < 130) {
-			var size = Math.floor((Math.random() * 6) + 5); // between 5 and 11 (inclusive)
-			var speed = (size/10);
-			var xSpeed = ( (Math.random() < 0.5) ? (speed*(-1)) : speed );
-			var ySpeed = ( (Math.random() < 0.5) ? (speed*(-1)) : speed );
-			stars[starsCount] = {
-				x: mouseX, 
-				y: mouseY,
-				xSpeed: xSpeed,
-				ySpeed: ySpeed,
-				diff: 0,
-				size: size
-			};
+		// start:	starsCount = 100   starsMore = 0
+		// max:   	starsCount = 130   starsMore = 30
+		// restart: starsCount = 130   starsMore = 0
+		console.log("starsCount: " + starsCount + " starsMore: " + starsMore);
+		var size = Math.floor((Math.random() * 6) + 5); // between 5 and 11 (inclusive)
+		var speed = (size/10);
+		var xSpeed = ( (Math.random() < 0.5) ? (speed*(-1)) : speed );
+		var ySpeed = ( (Math.random() < 0.5) ? (speed*(-1)) : speed );
+		
+		stars[(starsStart+starsMore)] = {
+			x: mouseX, 
+			y: mouseY,
+			xSpeed: xSpeed,
+			ySpeed: ySpeed,
+			diff: 0,
+			size: size
+		};
+		
+		if(starsCount < starsMax) {
 			starsCount++;
+			starsMore++;
+		} else {
+			if(starsMore >= (starsMax-starsStart)) {
+				starsMore = 0;
+			} else {
+				starsMore++;
+			}
 		}
 	}
 };
